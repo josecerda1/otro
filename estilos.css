@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+.menu{
+    list-style: none;
+    line-height: 42px;
+    /*outline: 1px solid greenyellow;*/
+    padding-left: 0;
+    width: 15em;
+    font-family: 'Josefin sans';
+    
+}
+.menu a{
+    color: #dddddd;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*outline: 1px solid blue;*/
+    width: 100%;
+}
+.menu a:hover{
+    padding-left: 20px;
+    color: #000000;
+    transition: all .2s;
+}
+
+.menu li{
+    /*outline: 1px solid hotpink;*/
+    box-shadow: 3px 0 coral inset;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    /*trs*/
+    -webkit-transition: all 1s;
+    
+    -o-transition: all 1s;
+    transition: all 1s;
+    border-left: 1px solid crimson;;
+}
+.menu li:hover{
+    box-shadow: 15em 0 coral inset;
+}
+
+nav {
+    background: rgb(050,050,050, .9 );
+    padding-right: .5em;
+    padding-top: .5em;
+    position: absolute;
+    left: -18em;
+    z-index: 20;
+    transition: all .3s;
+}
+
+nav.mostrar{
+    left: 0;
+}
+
+.barra{
+    background: #000;
+    height: 4em;
+}
+
+#mostrar-nav{
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    z-index: 30;
+}
+
+.bann{
+    width: 100%;
+    height: 6em;
+    background: url(./ambur.jpg);
+    float: right;
+    color: #fff;
+    font-size: 5em;
+}
+.bann h1{
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 10px 0 #000;
+}
+
+
+@media screen and (max-width: 1024px){
+    .bann{
+        height: 5em;
+        font-size: 3.2em;
+    }
+}
